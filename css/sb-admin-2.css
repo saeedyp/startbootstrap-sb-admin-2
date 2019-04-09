@@ -66,8 +66,9 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #858796;
-  text-align: left;
+  text-align: right;
   background-color: #fff;
+  direction:rtl;
 }
 
 [tabindex="-1"]:focus {
@@ -3825,8 +3826,8 @@ input[type="button"].btn-block {
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .input-group > .input-group-append > .btn,
@@ -3835,8 +3836,8 @@ input[type="button"].btn-block {
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .custom-control {
@@ -4464,7 +4465,7 @@ input[type="button"].btn-block {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
   list-style: none;
 }
@@ -11164,7 +11165,7 @@ a:focus {
 
 .sidebar #sidebarToggle::after {
   font-weight: 900;
-  content: '\f104';
+  content: '\f105';
   font-family: 'Font Awesome 5 Free';
   margin-right: 0.1rem;
 }
@@ -11183,7 +11184,7 @@ a:focus {
 }
 
 .sidebar.toggled #sidebarToggle::after {
-  content: '\f105';
+  content: '\f104';
   font-family: 'Font Awesome 5 Free';
   margin-left: 0.25rem;
 }
@@ -11248,13 +11249,13 @@ a:focus {
   .sidebar .nav-item .nav-link {
     display: block;
     width: 100%;
-    text-align: left;
+    text-align: right;
     padding: 1rem;
     width: 14rem;
   }
   .sidebar .nav-item .nav-link i {
     font-size: 0.85rem;
-    margin-right: 0.25rem;
+    margin-left: 0.25rem;
   }
   .sidebar .nav-item .nav-link span {
     font-size: 0.85rem;
@@ -11263,7 +11264,7 @@ a:focus {
   .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
     width: 1rem;
     text-align: center;
-    float: right;
+    float: left;
     vertical-align: 0;
     border: 0;
     font-weight: 900;
@@ -11271,7 +11272,7 @@ a:focus {
     font-family: 'Font Awesome 5 Free';
   }
   .sidebar .nav-item .nav-link[data-toggle="collapse"].collapsed::after {
-    content: '\f105';
+    content: '\f104';
   }
   .sidebar .sidebar-brand .sidebar-brand-icon i {
     font-size: 2rem;
